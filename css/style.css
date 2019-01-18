@@ -1,0 +1,141 @@
+*
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+header
+{
+    width: 100%;
+    background: black;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.xyz
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+}
+
+.logo span
+{
+    font-weight: bold;
+    color: rgb(140, 115, 163);
+}
+
+.main__list
+{
+    list-style: none;
+    padding: 10px;
+}
+
+.main__list-bullets
+{
+    display: inline-block;
+    margin-left: 30px;
+
+    position: relative;
+}
+
+.main__link
+{
+
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    padding: 40px 0;
+}
+
+.small__list::before
+{
+    content: '';
+    box-sizing: content-box;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 60px;
+
+    height: 0;
+    width: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: black;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+.small__list
+{
+    position: absolute;
+    left: -30px;
+    right: -30px;
+    padding: 20px;
+    display: none;
+}
+
+.main__list-bullets:hover > .small__list
+{
+    display: block;
+}
+
+.small__list-bullets
+{
+    background: black;
+    display: block;
+    padding: 10px;
+}
+
+.small__link
+{
+    color: white;
+    text-decoration: none;
+}
+
+section
+{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(231,230,230,1) 85%);
+}
+
+.background__chair img
+{
+    width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background__text
+{
+    width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background__text h1
+{
+
+}
