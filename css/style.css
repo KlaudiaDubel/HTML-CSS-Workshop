@@ -494,4 +494,143 @@ sup
 
 /*********** Section 4 ************/
 
+section .form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 500px;
+    background:white;
+}
 
+.form__header
+{
+    height: 20%;
+    margin-left: 40px;
+}
+
+.form__header span
+{
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-bottom: 7px solid rgb(140, 115, 163);
+}
+
+.form__container
+{
+    height: 80%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form__container form
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form__inputs1,
+.form__inputs2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form__inputs1
+{
+    width: 60%;
+    height: 300px;
+}
+
+.form__inputs1 input, textarea
+{
+    font-size: 1.5vw;
+    border: 1px solid rgba(140, 115, 163, 0.4);
+    width: 100%;
+    resize: none;
+}
+
+.form__inputs1 input::placeholder,
+textarea::placeholder
+{
+    color: rgba(140, 115, 163, 0.3);
+}
+
+.form__inputs2
+{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__inputs2 img
+{
+    object-fit: contain;
+}
+
+.agreement
+{
+    font-size: 1vw;
+}
+
+input[type="checkbox"]
+{
+    float: left;
+    margin: 4px 5px;
+}
+
+.button_sec4
+{
+    font-size: 1.5vw;
+    text-shadow: 1px 1px 0.3em #4C4156;
+    color: white;
+    background-color: rgb(140, 115, 163);
+    border: none;
+    border-radius: 10px;
+
+    width: 200px;
+    padding: 10px 10px;
+    transition-duration: 0.2s;
+}
+
+.button_sec4:hover
+{
+    box-shadow: 6px 6px 0.7em rgb(140, 115, 163);
+    background-color: rgba(140, 115, 163, 0.3);
+    color: rgb(140, 115, 163);
+    font-weight: bold;
+    text-shadow: 1px 1px 0.3em #4C4156;
+}
+
+/************* Footer **************/
+
+.footer
+{
+    width: 100%;
+    height: 50px;
+    background: white;
+}
+
+.footer__container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.copyrights
+{
+   font-size: 0.7vw;
+    color: rgba(140, 115, 163, 0.5);
+}
+
+.logo1
+{
+    color: black;
+}
