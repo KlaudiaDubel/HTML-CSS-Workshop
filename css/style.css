@@ -8,7 +8,7 @@ body
     background: black;
 }
 
-/* Header */
+/*************** Header ******************/
 
 header
 {
@@ -117,7 +117,7 @@ header
     text-decoration: none;
 }
 
-/* Section 1 */
+/****************** Section 1 ********************/
 
 section .container
 {
@@ -149,7 +149,7 @@ section .container
 .background__text h1
 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5vw;
     color: black;
     text-transform: uppercase;
 }
@@ -157,14 +157,14 @@ section .container
 .background__text span
 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2.5vw;
     color: rgb(140, 115, 163);
 }
 
 .background__text h2
 {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.3vw;
 }
 
 .arrow
@@ -189,7 +189,7 @@ section .container
 
 .button_sec1
 {
-    font-size: 25px;
+    font-size: 1.5vw;
     text-shadow: 1px 1px 0.3em #4C4156;
     color: white;
     background-color: rgb(140, 115, 163);
@@ -209,42 +209,221 @@ section .container
     text-shadow: 1px 1px 0.3em #4C4156;
 }
 
-/* Section 2 */
+/***************** Section 2 ********************/
 
-.section2 .container
+section .advert
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-
-    width: auto;
-    height: 400px;
-    background-color: white;
+    width: 100%;
+    height:300px;
+    background: white;
 }
 
-.section2 img
+.advert__box
+{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    padding: 20px 10px 20px 10px;
+}
+
+.advert__box img
+{
+    height: 100%;
+    width: 100%;
+}
+
+.advert__link
+{
+    width: 100%;
+    position: relative;
+    top: -35%;
+    line-height: 70px;
+
+    background: rgba(236, 240, 241, 0.5);
+}
+
+.advert__link a
+{
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    border-bottom: 7px solid rgb(140, 115, 163);
+}
+
+.advert__description
 {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid rgba(189, 195, 199, 0.5);
+    height: 100%;
+    padding: 20px;
+    text-align: justify;
+}
+
+.advert__description span
+{
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-bottom: 7px solid rgb(140, 115, 163);
+}
+
+.advert__description p
+{
+    font-size: 1vw;
+}
+
+/******************** Section 3 *********************/
+
+section .offer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 800px;
+    background:white;
+}
+
+.offer__header span
+{
+    font-size: 1.5vw;
+    font-weight: bold;
+    border-bottom: 7px solid rgb(140, 115, 163);
+    margin-left: 40px;
+}
+
+.offer__container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+}
+
+.offer__box
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 28%;
+    height: 90%;
+}
+
+.odd
+{
+
+    border: 2px solid rgba(189, 195, 199, 0.8);
+    border-radius: 5px;
+}
+
+.even
+{
+    color: white;
+    border: 2px solid rgb(140, 115, 163);
+    border-radius: 5px;
+    background:rgb(140, 115, 163);
+}
+
+.offer__box::before
+{
+    content: '';
+    position: absolute;
+    top: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.odd::before
+{
+    border: 2px solid rgba(189, 195, 199, 0.8);
+    background: white;
+}
+
+
+.even::before
+{
+    border: 2px solid white;
+    background: rgb(140, 115, 163);
+}
+
+.offer__box::after
+{
+    content: '';
+    position: absolute;
+    top: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.odd::after
+{
+    border: 1px solid rgba(189, 195, 199, 0.8);
+    background: rgba(189, 195, 199, 1);
+}
+
+.even::after
+{
+    border: 1px solid white;
+    background: white;
+}
+
+.offer__plan
+{
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.offer__price
+{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    width: 400px;
-    height: auto;
-
-    margin-left: 40px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
 }
 
-.section2__text
+.first
 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    border: 2px solid rgba(189, 195, 199, 0.8);
+    color: rgb(140, 115, 163);
 
-    border: 2px solid black;
-    width: 400px;
-    height: auto;
+    font-size: 0.6vw;
+    text-transform: uppercase;
+}
 
-    margin-left: 40px;
-    margin-right: 40px;
+.second
+{
+    border: 2px solid white;
+    background-color: white;
+
+    font-size: 0.6vw;
+    text-transform: uppercase;
+    color: rgb(140, 115, 163);
+
+}
+
+.offer__num
+{
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+sup
+{
+    vertical-align: super;
+    font-size: 0.8vw;
+    font-weight: bold;
 }
